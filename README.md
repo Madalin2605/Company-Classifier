@@ -36,6 +36,6 @@ This will classify companies and generate the `ml_insurance_challenge_annotated.
 ## Notes
 - `train_logistic_regression.py` and `train_setfit.py` represent experimental approaches.
 - For any list of companies, running `main.py` should provide the label classification for most of the companies.
-
+- `Presentation.md` file provides an explanation of the solution and approaches.
 
 
