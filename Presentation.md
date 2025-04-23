@@ -23,6 +23,29 @@ This project addresses the multi-label classification of insurance companies int
   - Inference was limited to 1,000 entries due to processing time constraints.
   - Validity of predicted labels was checked by ensuring they belonged to the same semantic category as the rule-based labels.
 
+### 2. Logistic Regression Classifier
+- Implemented using `scikit-learn` with `MultiLabelBinarizer`.
+- I used a small labeled dataset generated with the hybrid rule-based method.
+- Logistic regression was chosen due to its simplicity and effectiveness in multi-label classification.
+- However, the model struggled to generalize because of:
+  - The small size of the training set
+  - Significant label imbalance across examples
+- As a result, the model achieved low performance, with micro/macro F1-scores between 0.1 and 0.15.
+
+### 3. SetFit Model Fine-Tuning
+- Fine-tuned `paraphrase-MiniLM-L6-v2` using the `SetFit` framework on the same dataset as the logistic regression model.
+- Achieved improved classification quality over logistic regression.
+- Performance metrics, with micro/macro F1-scores between 0.38 and 0.55.
+- Observations:
+  - Better label assignment quality and generalization than logistic regression
+  - However, a significant number of companies received no predicted labels
+
+
+
+
+
+
+
 
 
 
