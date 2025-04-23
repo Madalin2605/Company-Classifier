@@ -40,6 +40,14 @@ This project addresses the multi-label classification of insurance companies int
   - Better label assignment quality and generalization than logistic regression
   - However, a significant number of companies received no predicted labels
 
+## Notes
+- Training scripts for logistic regression and SetFit are included in `training_attempts/` for reference.
+- `requirements.txt` ensures environment setup.
+
+---
+
+
+
 
 
 
